@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="description">
+      With each level, the device blinks 1 time more. All you need to do is
+      repeat the blink sequence. Good luck!
+    </div>
+
+    <div class="wrapper">
+      <button class="btn red" data-id="1" value="red"></button>
+      <button class="btn green" data-id="2" value="green"></button>
+      <button class="btn yellow" data-id="3" value="yellow"></button>
+      <button class="btn blue" data-id="4" value="blue"></button>
+    </div>
+
+    <div class="control">
+      <button class="start">
+        Start new game
+      </button>
+
+      <span class="display"></span>  
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>

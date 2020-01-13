@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background: tan;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.description{
+  padding: 1em 2em;
+  text-align: center;
+}
+.control {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 1em;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 20em;
+  height: 20em;
+  background: #1b2327;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  grid-gap: .9em;
+  border: .9em solid #1b2327;
+}
+  .btn {
+    font-size: 2em;
+    color: #fff;
+  }
+  .blue {
+    background: #03a9f4;
+    opacity: 0.5;
+    border: 1em solid #03a9f4;
+  }
+  .red {
+    background: #ff1616;
+    opacity: 0.5;
+    border: 1em solid #ff1616;
+  }
+  .yellow {
+    background: #fff700;
+    opacity: 0.5;
+    border: 1em solid #fff700;
+  }
+  .green {
+    background: #00ff0a;
+    opacity: 0.5;
+    border: 1em solid #00ff0a;
+  }
+
+.start {
+  width: 8em;
+  height: 3.5em;
+  margin-top: 5.5em;
+  background: tomato;
+  border-radius: 2em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.display {
+  min-width: 8em;
+  height: 1.7em;
+  margin-top: 2em;
+  background: tomato;
+  border-radius: 2em;
+  padding: .3em 1em 0 1em;
+  text-align: center;
+  font-size: 2em;
+  border: 2px solid #d8d8d8;
+  color: #fff;
+}
+@media screen and (max-width: 550px) {
+  .control {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-gap: 1em;
+  }
+  .start {
+    margin-top: .5em;
+  }
+  .display {
+    min-height: 1.3em;
+    width: 80%;
+    margin-top: .5em;
+  }
+  .wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+}
+@media screen and (max-width: 400px) {
+  .control {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-gap: 1em;
+  }
+  .wrapper {
+    top: 20em;
+    width: 85vw;
+    height: 85vw;
+    grid-gap: .5em;
+    border: .5em solid #111;
+  }
+  .start {
+    margin-top: .5em;
+  }
+  .display {
+    width: 80%;
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+}
