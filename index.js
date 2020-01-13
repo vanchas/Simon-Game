@@ -18,7 +18,7 @@ function bright(btn) {
   setTimeout(() => {
     btn.style.opacity = '0.5';
   }, 500);  
-  console.log(sequence);
+  // console.log(sequence);
 }
 
 function randomBtn() {
